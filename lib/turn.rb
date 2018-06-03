@@ -14,4 +14,15 @@ def move(board, pos, marker="X")
   board[pos] = marker
 end
 
-def turn()
+def turn(board)
+  valid_go = FALSE
+  
+  until valid_go do
+    puts "Please enter 1-9:"
+    input = gets.strip
+    pos = input_to_index(input)
+    valid_go = valid_move?(board, pos)
+  
+  move(board, pos)
+  display_board(board)
+end
