@@ -1,7 +1,7 @@
 def display_board(board)
   rows = (0..8).step(3).collect{|i| (i..i+2).collect{|x| " #{board[x]} "}.join("|")}
   div = "\n" + "-"*11 + "\n"
-  puts [row_1, row_2, row_3].join(div)
+  puts rows.join(div)
 end
 
 def input_to_index(pos)
