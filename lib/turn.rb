@@ -10,6 +10,7 @@ def valid_move?(board, pos)
 end
 
 def move(board, pos, marker="X")
+  board[pos] = marker
 end
 
 def turn()
