@@ -26,6 +26,7 @@ def turn(board)
     input = gets.strip
     pos = input_to_index(input)
     valid_go = valid_move?(board, pos)
+  end
   
   move(board, pos)
   display_board(board)
