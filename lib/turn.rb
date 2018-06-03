@@ -1,5 +1,6 @@
 def display_board(board)
-  
+  row_1 = (0, 3).collect{|x| " #{board[x]} "}.join("|")
+  div = "-"*11
 end
 
 def input_to_index(pos)
