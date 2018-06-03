@@ -3,7 +3,7 @@ def display_board(board)
   row_2 = (3..5).collect{|x| " #{board[x]} "}.join("|")
   row_3 = (6..8).collect{|x| " #{board[x]} "}.join("|")
   
-  rows = 
+  rows = (0..8).step(3).collect{}
   div = "\n" + "-"*11 + "\n"
   puts [row_1, row_2, row_3].join(div)
 end
